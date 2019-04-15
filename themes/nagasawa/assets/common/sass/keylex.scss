@@ -1,0 +1,378 @@
+@charset "utf-8";
+
+@import "init/import";
+
+/* -------------------------------------------------
+    01-layout,style
+      common
+      header
+      main
+      sidebar
+      footer
+    02-function
+      modal
+      slide
+    03-animationsss
+    04-responsives
+    05-others
+------------------------------------------------- */
+    
+.mainImg {
+  margin-bottom: 50px;
+  padding: 30px 0 20px;
+
+  text-align: center;
+
+  background: url(../img/products/keylex/bg_mainImg.jpg) no-repeat;
+  background-size: cover;
+  
+  .mainImg__main {
+    position: relative;
+
+    margin: 0 auto 15px;
+
+    width: 950px;
+    height: 380px;
+
+    overflow: hidden;
+
+    img {
+      position: absolute;
+      left: 0;
+      top: 0;
+      
+      display: none;
+    }    
+  }
+  .mainImg__imgList {
+    font-size: 0;
+    
+    .item {
+      position: relative;
+      
+      display: inline-block;
+      margin-right: 10px;
+      
+      background-color: #FFF;
+    }
+    .bg.on {
+      position: absolute;
+      left: 0;
+      top: 0;
+
+      height: 100%;
+      width: 100%;
+
+      border: 4px solid #fff;
+      // border-width: 4;
+      box-sizing: border-box;
+    }
+  }
+}
+
+.titleBlock {
+  @extend %width;
+  
+  margin-bottom: 45px;
+  
+  text-align: center;
+  
+  .titleBlock__tit {}
+}
+
+.keywordBlock{
+  text-align: center;
+  
+  .keywordBlock__wrap {
+    overflow: hidden;
+    
+    margin-bottom: 2px;
+  }
+  
+  .keywordBlock__tit {margin-bottom: 25px;}
+  .keywordBlock__text {margin-bottom: 25px;}
+
+  .keywordBlock__imgWrap {
+    position: relative;
+
+    overflow: hidden;
+    margin-bottom: 5px;
+    
+    background: url(../img/products/keylex/bg_mosaic.gif);
+    
+    img {
+      position: relative;
+      top: -80px;
+    }
+  }
+
+  .keywordBlock__list {
+    @extend %width;
+    @extend %cf;
+    
+    .item {
+      float: left;
+      padding-top: 15px;
+      
+      width: 316px;
+      
+      box-sizing: border-box;
+      background: url(../img/products/keylex/dot.gif) top right repeat-y;
+    }
+    .item:nth-child(2) {
+      width: 317px;
+    }
+    .item:last-child {
+      background: none;
+    }
+
+    .keywordBlock__list_tit {
+      margin-bottom: 10px;
+      
+      @include fz(14);
+      font-weight: bold;
+      letter-spacing: 0;
+      .fzSmall {
+        @include fz(12);
+      }
+    }
+    .keywordBlock__list_text {
+      padding: 0 20px 8px 20px;
+      text-align: justify;
+    }
+
+    .ac {text-align: center !important;}
+  }
+
+  .keywordBlock__wrap_useful {
+    .keywordBlock__list {padding-bottom: 50px;}
+
+    .keywordBlock__imgWrap {top: -120px;}
+  }
+  .keywordBlock__wrap_design {
+    .keywordBlock__tit {padding-top: 50px;}
+    .keywordBlock__list {padding-bottom: 50px;}
+    
+    .keywordBlock__imgWrap {top: -200px;}
+    .item:nth-of-type(1) {
+      height: 175px;
+    }
+  }
+  .keywordBlock__wrap_sage {
+    margin-bottom: 50px;
+    
+    .keywordBlock__tit {padding-top: 50px;}
+    .keywordBlock__imgWrap {top: -185px;}
+    
+    .item:nth-of-type(2) {
+      height: 271px;
+    }
+  }
+
+  .keywordBlock__tit_open {
+    position: absolute;
+    top: 65px;
+    left: 50%;
+    z-index: 2;
+    
+    margin-left: -44px;
+  }
+  .keywordBlock__wrap_design,
+  .keywordBlock__wrap_sage {
+    .keywordBlock__tit_open {margin-left: -62px;}
+  }
+  .keywordBlock__btn_detail {
+    position: absolute;
+    top: 145px;
+    left: 50%;
+    z-index: 2;
+ 
+    margin-left: -116px;
+  }
+  .shadow {
+    position: absolute;
+    top: 0;
+    left: 50%;
+    
+    margin-left: -475px;
+
+    width: 949px;
+    height: 100%;
+    
+    background-color: rgba(0,0,0,.4);
+  }
+
+
+  .redMark {
+    padding: 0 3px;
+    img {vertical-align: baseline;}
+  }
+
+}
+.mainArea {
+  @extend %width;
+  
+  .pageTit {padding-top: 0;}
+  .pageTit__tit {margin-bottom: 30px;}
+  
+  .lineupBlock {
+    @extend %cf;
+    margin: 0 auto 50px;
+    width: 910px;
+
+    .item {
+      float: left;
+      
+      margin-right: 40px;
+      margin-bottom: 40px;
+
+      width: 276px;
+    }
+    .item:nth-child(3n) {margin-right: 0;}
+    .item:nth-last-child(-n+3) {margin-bottom: 0;}
+    .lineupBlock__img,.lineupBlock__img_tit{display: block;}
+
+    .lineupBlock__text {padding: 15px 0;}
+
+    .lineupBlock__supply {
+      margin-bottom: 20px;
+      
+      @extend %cf;
+      .sub_item {
+        margin-right: 3px;
+        margin-bottom: 3px;
+        
+        float: left;
+      }    
+      .sub_item:nth-child(3n) {
+        margin-right: 0;
+      }    
+      .sub_item:nth-last-child(-n+3) {
+        margin-bottom: 0;
+      }    
+    }
+    .lineupBlock__icon {
+      @extend %cf;
+      
+      .sub_item {
+        float: left;
+        
+        margin-right: 4px;
+        margin-bottom: 4px;
+      }
+      .sub_item:last-child {margin-right: 0;}
+      .sub_item:nth-child(n+7) {margin-bottom: 0;}
+      img {
+        width: 42px;
+        height: 42px;
+      }
+    }
+  }
+
+  .othersBlock {
+    .lineupBlock__text {padding-bottom: 0;}
+  }
+
+  .pageTit__others {
+    padding-bottom: 0;
+    .pageTit__tit {margin-bottom: 0;}
+  }
+
+  .iconBlock {
+    @extend %cf;
+
+    margin-bottom: 50px;
+    padding: 20px;
+    background-color: #f6f6f6;
+    .item {
+      float: left;
+      
+      margin-bottom: 15px;
+      padding-right: 30px;
+
+      width: calc(33.3% - 30px);
+    }
+    .item:nth-child(3n) {
+      padding-right: 0;
+      width: 33.4%;
+    }
+    .item:nth-last-child(-n+3) {margin-bottom: 0;}
+    .left {
+      float: left;
+      width: 15%;
+      margin-right: 5%;
+      height: auto;
+    }
+    .right {
+      float: left;
+      width: 80%;
+      
+      
+      @include fz(12);
+      line-height: 14px;
+      @extend %justify;
+    }
+  }
+
+  .mainArea__block {
+    @extend %cf;
+    
+    .item {
+      float: left;
+      width: 33.3%;
+      
+      padding-bottom: 20px;
+      
+      border-right: 1px solid #ccc;
+    }      
+    .item__inner {
+      padding: 0 20px;
+      
+    }
+    .item:nth-of-type(3n) {
+      width: 33%;
+      
+      border-right: none;
+    }
+
+    .linkArea:hover .link {border-bottom: 1px solid #1c426d;}
+  }
+
+  .item__thumbnail {
+    padding-top: 35px;
+    margin-bottom: 30px;
+
+    text-align: center;
+    
+    width: 100%;
+  }
+  .item__tit {
+    text-align: center;
+
+    margin-bottom: 30px;
+
+    line-height: 1;      
+  }
+  .item__text {      
+    letter-spacing: .005em;
+    
+    line-height: 26px;
+    text-align: justify;
+  }
+
+}
+
+.iconDed {
+    background: url(../img/products/keylex/icon07.png) no-repeat left 0px;
+}
+.iconSafe {
+    background: url(../img/products/keylex/icon02.png) no-repeat left 0px;
+}
+.iconBoth {
+    background: url(../img/products/keylex/icon08.png) no-repeat left 0px;
+}
+.icon {
+  padding-left: 35px;
+  background-size: 20px;
+  margin-left: -35px;    
+}

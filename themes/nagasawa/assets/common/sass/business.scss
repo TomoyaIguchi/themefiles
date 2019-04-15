@@ -1,0 +1,142 @@
+@charset "utf-8";
+
+@import "init/import";
+
+/* -------------------------------------------------
+    01-layout,style
+      common
+      header
+      main
+      sidebar
+      footer
+    02-function
+      modal
+      slide
+    03-animationsss
+    04-responsives
+    05-other
+------------------------------------------------- */
+    
+.mainArea {
+  @extend %width;
+  
+  .para {
+    margin-bottom: 50px;
+    
+    text-align: center;
+  }
+  .mainImg {
+    margin-bottom: 5px;
+  }
+  .process {
+    margin-bottom: 50px;
+    padding-top: 50px;
+
+    background: url(../img/company/business/triangle.png) no-repeat center top;
+    
+    .process__tit {
+      margin-bottom: 30px;
+      text-align: center;
+
+    }
+    .process__inner {
+      padding-left: 30px;
+      padding-top: 35px;
+      
+      background-color: #f6f6f6;
+    }
+
+    .process__block_list {
+      @extend %cf;
+    }
+    .item {
+      float: left;
+      
+      margin-bottom: 25px;
+      
+      width: 303px;
+      
+      h4 {
+        margin-bottom: 15px;
+      }
+      p {
+        padding-right: 30px;
+        
+        line-height: 18px;
+        @include fz(12);
+        @extend %justify;
+      }
+    }
+
+  }
+
+  .para-block__tit {
+    padding-bottom: 29px;
+    border-bottom: 1px solid #cccccc;
+    text-align: center;
+    margin-bottom: 30px;
+  }
+
+  .para-block__list {
+    margin-bottom: 20px;
+    padding: 0 20px;
+    
+    .item {margin-bottom: 20px;}
+    .item:nth-last-of-type(1) {margin-bottom: 0;}
+  }
+
+  .para-block__list_tit {
+    margin-bottom: 20px;
+    padding-bottom: 6px;
+    
+    color: #333;
+    font-weight: bold;
+    border-bottom: 1px solid #e8ecf0;
+  }
+
+  .para-block__list_img-ist {
+    @extend %cf;
+    margin-bottom: 20px;
+    
+    .sub-item {
+      float: left;
+      margin-right: 20px;
+    }
+    .sub-item:nth-last-of-type(-n+3) {
+      margin-right: 21px;
+    }
+    .sub-item:nth-last-of-type(1) {
+      margin-right: 0;
+    }
+  }
+
+  .para-block__list_subTit {
+    @include fz(14);    
+  }
+
+  .content__list {
+    margin-bottom: 15px;
+    padding-left: 30px;
+    
+    .item {
+      list-style-type: decimal;
+      line-height: 24px;
+      letter-spacing: .1em;
+      
+      margin-bottom: 10px;
+
+      @include fz(14);
+    }
+    .last {
+      margin: 0;
+    }
+  }
+  .iso {
+    line-height: 30px;
+  }
+  .para-block__img {
+    text-align: right;
+    padding-right: 45px;
+  }
+}
+

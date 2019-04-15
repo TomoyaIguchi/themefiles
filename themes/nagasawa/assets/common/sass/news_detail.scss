@@ -1,0 +1,75 @@
+@charset "utf-8";
+
+@import "init/import";
+
+/* -------------------------------------------------
+    01-layout,style
+      common
+      header
+      main
+      sidebar
+      footer
+    02-function
+      modal
+      slide
+    03-animationsss
+    04-responsives
+    05-others
+------------------------------------------------- */
+    
+.mainArea {
+  @extend %width;
+
+  .artcile__tit-block {
+    margin-bottom: 55px;
+  }
+  .article__tit {
+    text-indent: 10px;
+    padding-bottom: 10px;
+    
+    line-height: 30px;
+
+    border-bottom: 3px solid #ccc;
+    @include fz(20);
+  }
+
+  .article__date {
+    position: absolute;
+    right: 10px;
+    bottom: 5px;
+  }
+
+  .article__para {
+    margin-bottom: 40px;
+    
+    .article__text {
+      letter-spacing: 0;
+    }
+    .article__img {
+      text-align: center;
+      margin: 25px 0;
+    }
+  }
+
+  .article__pager {
+    text-align: center;
+    
+    .article__pager_block {
+      font-size: 0;
+    }
+    .item {
+      display: inline;
+    }
+    .item:nth-of-type(1) {
+      margin-right: 90px;
+    }
+  }
+
+  .sns {
+    position: absolute;
+    right: 0;
+    bottom: -35px;
+  }
+
+}
+

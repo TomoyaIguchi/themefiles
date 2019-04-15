@@ -1,0 +1,32 @@
+@charset "utf-8";
+
+@import "init/import";
+
+/* -------------------------------------------------
+    01-layout,style
+      common
+      header
+      main
+      sidebar
+      footer
+    02-function
+      modal
+      slide
+    03-animationsss
+    04-responsives
+    05-other
+------------------------------------------------- */
+    
+.mainArea {
+  @extend %width;
+
+    #notRecruit .btnArea__inquiry-wrap {
+      padding: 140px 0;
+
+      letter-spacing: .025em;
+
+      @include fz(20);
+    }
+
+}
+

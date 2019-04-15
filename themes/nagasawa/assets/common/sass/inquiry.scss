@@ -1,0 +1,164 @@
+@charset "utf-8";
+
+@import "init/import";
+
+/* -------------------------------------------------
+    01-layout,style
+      common
+      header
+      main
+      sidebar
+      footer
+    02-function
+      modal
+      slide
+    03-animationsss
+    04-responsives
+    05-others
+------------------------------------------------- */
+    
+.mainArea {
+  @extend %width;
+  
+
+  .table {
+    width: 100%;
+    border-collapse: collapse;
+    
+    margin-bottom: 30px;
+    
+    .table__tr {
+    }
+    .table__tr_post {
+      .mainArea__input_text {width: 190px;}
+      img {padding:0 5px;vertical-align: middle;}
+    }
+    .table__tr_address {
+      .mainArea__input_text {width: 700px;}
+    }
+    .table__tr_content {
+      .table__td:last-child {
+        line-height: 1;
+        padding: 15px 20px;
+      }
+      .table__td:last-child textarea {
+        box-sizing: border-box;
+        resize: none;
+        vertical-align: bottom;
+        
+        padding: 8px;
+
+        width: 100%;
+        height: 230px;
+
+        border: 1px solid #ccc;
+        @include fz(12);
+        font-family: $font;
+        letter-spacing: .09em;
+      }
+    }
+    .table__tr_productImg {
+      .mainArea__input_text {
+        box-sizing: border-box;
+
+        margin-right: 10px;
+
+        height: 31px;
+        width: 562px;
+      }
+      .text {
+        margin-top: 10px;
+      }
+      .file {
+        // display: none;
+      }
+      .file__mask {
+        display: inline-block;
+        
+        width: 128px;
+        height: 31px;
+        vertical-align: bottom;
+        
+        background: url(../img/inquiry/btn_refer.jpg);
+      }
+    }
+
+    .table__td {
+      box-sizing: border-box;
+      
+      padding: 15px 20px;
+      padding-right: 0;
+      
+      line-height: 24px;
+      letter-spacing: .02em;
+
+      @include fz(14);
+      border: 1px solid #cccccc;
+    }
+    .table__td:nth-child(1) {
+
+      width: 210px;
+      
+      background-color: #f6f6f6;
+    }
+
+    .table__td_list {
+      @extend %cf;
+    }
+    .item {
+      float: left;
+    }
+    .item:nth-child(1) {
+      margin-right: 15px;
+    }
+    .item:nth-child(2) {
+      display: table;
+      height: 311px;
+      span {
+        display: table-cell;
+        vertical-align: middle;
+
+        line-height: 27px;
+        height: 100%;
+      }
+    }
+
+
+    .mainArea__input_text {
+      box-sizing: border-box;
+
+      padding-left: 10px;
+
+      width: 410px;
+      height: 30px;
+      line-height: 30px;
+
+      @include fz(12);
+      font-family: $font;
+      letter-spacing: .1em;
+      border: 1px solid #ccc;
+    }
+
+    .required {
+      display: inline-block;
+
+      padding-left: 15px;
+
+      @include fz(10);
+      color: #ff0000;
+    }
+    .radioArea {
+      margin-bottom: 10px;
+    }
+    .btnArea__inquiry-wrap {
+      font-size: 0;
+    }
+
+  }
+  .btnArea__inquiry-wrap img:first-child {
+    margin-right: 20px;
+  }
+
+
+}
+

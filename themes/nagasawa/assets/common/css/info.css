@@ -1,0 +1,137 @@
+.mainArea .table .table__td_list {
+    zoom: 1
+}
+
+.mainArea .table .table__td_list:after {
+    display: block;
+    clear: both;
+    content: ''
+}
+
+.mainArea {
+    width: 950px;
+    margin: 0 auto
+}
+
+.mainArea .mainArea__tit,
+.mainArea .mainImg {
+/*    margin-top: 50px;*/
+    margin-bottom: 30px;
+    text-align: center
+}
+
+.mainArea .listBlock {
+    overflow: hidden;
+    margin-bottom: 50px;
+    padding: 20px;
+    background-color: #f6f6f6
+}
+
+.mainArea .policy__img,
+.mainArea .policy__para,
+.mainArea .table {
+    margin-bottom: 30px
+}
+
+.mainArea .listBlock .item {
+    float: left;
+    padding-right: 15px;
+    padding-bottom: 20px
+}
+
+.mainArea .listBlock .item:nth-of-type(3n) {
+    padding-right: 0
+}
+
+.mainArea .listBlock .item:nth-last-of-type(-n+3) {
+    padding-bottom: 0
+}
+
+.mainArea .table {
+    width: 100%;
+    border-collapse: collapse
+}
+
+.mainArea .table .table__td {
+    font-size: 14px;
+    font-size: .875rem;
+    line-height: 24px;
+    box-sizing: border-box;
+    padding: 9px 0 8px 20px;
+    letter-spacing: .02em;
+    border: 1px solid #ccc
+}
+
+.mainArea .table .table__td:nth-child(1) {
+    width: 135px;
+    background-color: #f6f6f6
+}
+
+.mainArea .table .item {
+    float: left
+}
+
+.mainArea .table .item:nth-child(1) {
+    margin-right: 15px
+}
+
+.mainArea .table .item:nth-child(2) {
+    display: table;
+    height: 311px
+}
+
+.mainArea .table .item:nth-child(2) span {
+    line-height: 27px;
+    display: table-cell;
+    height: 100%;
+    vertical-align: middle
+}
+
+.mainArea .table .bgColor {
+    background-color: #fbfbfb!important
+}
+
+.mainArea .table .lhAdjust {
+    line-height: 27px
+}
+
+.mainArea .table__history .table__td {
+    line-height: 27px!important
+}
+
+.mainArea .policy__para,
+.mainArea .policy__sign {
+    letter-spacing: 0
+}
+
+.mainArea .policy__sign {
+    text-align: right
+}
+
+.mainArea .map {
+    width: 467px;
+    height: 311px
+}
+
+/* ----------------------------
+* dev_takeda 2017 02 03
+* -------------------------- */
+.table__tr a{
+    color: #00468b;
+}
+.mainArea .table  .table__tr .item a >span{
+    line-height: 22px;
+}
+/*
+.mainArea .table .table__td_list .item span.arrow,
+.mainArea .table__td span.arrow{
+    vertical-align: middle;
+    display: inline-block;
+    font-size: 10px;
+    line-height: inherit;
+    height: 28px;
+}
+*/
+.table__td img{
+    margin: 10px 0;
+}

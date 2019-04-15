@@ -1,0 +1,68 @@
+@charset "utf-8";
+
+@import "init/import";
+
+/* -------------------------------------------------
+    01-layout,style
+      common
+      header
+      main
+      sidebar
+      footer
+    02-function
+      modal
+      slide
+    03-animationsss
+    04-responsives
+    05-other
+------------------------------------------------- */
+    
+.mainArea {
+
+  .item {
+    margin-bottom: 1px;
+    
+    background-color: #f4f4f8;
+  }
+
+  .imgBlock {
+    margin: 0 auto;
+
+    @extend %width;
+    height: 412px;
+  }
+  .imgBlock01 {
+    background: url(../img/products/img01.jpg) no-repeat;
+  }
+  .imgBlock02 {
+    background: url(../img/products/img02.jpg) no-repeat;
+  }
+  .imgBlock03 {
+    background: url(../img/products/img03.jpg) no-repeat;
+  }
+
+  .imgBlock__textWrap {
+    position: absolute;
+
+    top: 137px;
+    left: 454px;    
+  }
+  .imgBlock__text {
+    margin-bottom: 20px;
+  }
+  .imgBlock__textBottom {
+    display: inline-block;
+
+    padding-left: 15px;
+    
+    background: url(../img/common/icon-arrow.png) no-repeat 0px 2px;
+    
+    @include fz(14);
+  }
+  .imgBlock02 {
+    .imgBlock__textWrap {
+      left: 156px;    
+    }
+  }
+}
+

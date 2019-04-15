@@ -1,0 +1,74 @@
+@charset "utf-8";
+
+@import "init/import";
+
+/* -------------------------------------------------
+    01-layout,style
+      common
+      header
+      main
+      sidebar
+      footer
+    02-function
+      modal
+      slide
+    03-animationsss
+    04-responsives
+    05-other
+------------------------------------------------- */
+    
+.mainArea {
+  @extend %width;
+
+  .item {
+    height: 65px;
+    
+    .mainArea__tit {
+        padding-bottom: 13px;
+        background: url(../img/common/dot.png) repeat-x bottom;
+    }
+    .mainArea__list {
+        @extend %cf;
+        
+        padding: 15px 0;
+        
+        @include fz(14);
+    }
+    .sub_item {
+        float: left;
+        
+        margin-right: 80px;
+        padding-left: 15px;
+        
+        background: url(../img/common/icon-arrow.png) no-repeat 0px 2px;
+        
+        .outerLink {
+          padding-right: 18px;
+          background: url(../img/common/iconBig.png) right 3px no-repeat;
+        }
+    }
+    &:nth-child(3) {
+      .sub_item {
+        margin-right: 65px;
+      }
+    }
+    &:nth-child(4) {
+      .sub_item {
+        margin-right: 111px;
+      }
+    }
+    &:nth-child(15) {
+      .sub_item {
+        margin-right: 46px;
+      }
+    }
+  }
+
+  .last {
+      margin: 0 !important;
+  }
+  .itemH100 {
+    height: 100px;
+  }
+}
+

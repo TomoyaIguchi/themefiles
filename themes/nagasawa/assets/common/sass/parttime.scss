@@ -1,0 +1,72 @@
+@charset "utf-8";
+
+@import "init/import";
+
+/* -------------------------------------------------
+    01-layout,style
+      common
+      header
+      main
+      sidebar
+      footer
+    02-function
+      modal
+      slide
+    03-animationsss
+    04-responsives
+    05-other
+------------------------------------------------- */
+    
+.mainArea {
+  @extend %width;
+
+    .table {
+      width: 100%;
+      border-collapse: collapse;
+      
+      margin-bottom: 30px;
+    }
+
+    .table__tr {
+    }
+
+    .table__td {
+      padding: 9px 20px 8px;
+      line-height: 24px;
+
+      letter-spacing: .02em;
+
+      @include fz(14);
+      border: 1px solid #cccccc;
+    }
+    .table__td:nth-child(1) {
+      background-color: #f6f6f6;
+    }
+
+
+  .adjust-padding {
+    display: inline-block;
+    padding-right: 45px;
+  }
+  .table__tr:nth-child(4) {
+    .adjust-padding {
+        padding-right: 31px;
+    }
+  }
+  .table__tr:nth-child(5) {
+    .adjust-padding:nth-of-type(1) {
+        padding-right: 17px;
+    }
+    .adjust-padding:nth-of-type(2) {
+        padding-right: 32px;
+    }
+  }
+
+  #notRecruit .btnArea__inquiry-wrap {
+    padding: 140px 0;
+
+    letter-spacing: .025em;
+
+    @include fz(20);
+  }
+}

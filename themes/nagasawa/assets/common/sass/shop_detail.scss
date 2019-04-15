@@ -1,0 +1,172 @@
+@charset "utf-8";
+
+@import "init/import";
+
+/* -------------------------------------------------
+    01-layout,style
+      common
+      header
+      main
+      sidebar
+      footer
+    02-function
+      modal
+      slide
+    03-animationsss
+    04-responsives
+    05-other
+------------------------------------------------- */
+    
+.mainArea {
+  @extend %width;
+
+  .searchArea {
+    margin-bottom: 30px;
+    padding: 20px;
+    
+    background-color: #f6f6f6;
+  } 
+  .listBlock {
+    @extend %cf;
+    
+    margin-bottom: 10px;
+    padding-bottom: 10px;
+
+    border-bottom: 1px solid #ccc;
+    
+    .item {
+      float: left;
+      padding-bottom: 10px;
+      padding-right: 15px;
+    }
+    .item:nth-of-type(3n) {padding-right: 0;}
+    .item:nth-last-of-type(-n+3) {padding-bottom: 0;}
+  }
+  .listBlock__actionList {
+    margin-bottom: 20px;
+
+    padding-bottom: 0;
+    border-bottom: none;
+  }
+
+  .selectArea {
+    @extend %cf;
+    
+    border-collapse: collapse;
+    border-spacing: 0;
+    border: 0;
+    width: 100%;
+    
+    .item {
+      width: 50%;
+      padding: 0;
+    }
+    .subItem {
+      float: left;
+      height: 34px;
+      background: url(../img/shop/detail/bg.gif);
+    }
+    .subItem.right {
+      position: relative;
+      width: calc(100% - 151px);
+    }
+    .selectBoxArea {
+      position: absolute;
+      top: 50%;
+      left: -2px;
+
+      margin-top: -15px;
+      width: 100%;
+      
+      background-color: #FFF;
+      border: none;
+    }
+    .selectBoxArea__listWrap {
+      // left: auto;
+    }
+  }
+
+  .block {
+    border: 1px solid #ccc;
+    
+    .block__list {
+      padding: 18px 20px;
+      padding-bottom: 14px;
+
+      border-bottom: 1px solid #ccc;
+    }
+    .block__list:last-child {
+      border-bottom: none;
+    }
+
+    .block__list_inner {
+      @extend %cf;
+
+      margin-bottom: 15px;
+    }
+
+    .block__list_item {
+      float: left;
+
+      margin-right: 20px;
+      
+      @include fz(14);
+    }
+
+    .block__list_item_tit {
+      margin-bottom: 6px;
+
+      line-height: 16px;
+      
+      font-weight: bold;
+    }
+    .block__list_item_text {
+      line-height: 27px;
+
+      letter-spacing: .02em;
+    }
+    .block__list_item_action {
+      @extend %cf;
+
+      position: absolute;
+      bottom: 0;
+      
+      .sub_item {
+        float: left;
+      }
+    }
+
+    .link {
+      letter-spacing: .02em;
+    }
+
+    .bg {
+      display: inline-block;
+      
+      margin-right: 8px;
+      padding: 5px 0;
+
+      width: 100px;
+
+      text-align: center;
+      letter-spacing: .02em;
+      background-color: #d2dae3;
+    }
+    .bg.off {
+      background-color: #f4f4f4;
+
+      color: #c2c2c2;
+    }
+
+  }
+
+  .para {
+    margin-bottom: 15px;
+    text-align: center;
+    
+    font-weight: bold;
+  }
+
+
+}
+

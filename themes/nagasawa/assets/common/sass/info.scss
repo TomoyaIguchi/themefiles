@@ -1,0 +1,126 @@
+@charset "utf-8";
+
+@import "init/import";
+
+/* -------------------------------------------------
+    01-layout,style
+      common
+      header
+      main
+      sidebar
+      footer
+    02-function
+      modal
+      slide
+    03-animationsss
+    04-responsives
+    05-others
+------------------------------------------------- */
+    
+.mainArea {
+  @extend %width;
+  
+  .mainImg {
+    margin-bottom: 30px;
+
+    text-align: center;
+  }
+
+  .mainArea__tit {
+    margin-bottom: 30px;
+    
+    text-align: center;
+  }
+
+  .listBlock {
+    overflow: hidden;
+
+    margin-bottom: 50px;
+    padding: 20px;
+
+    background-color: #f6f6f6;
+    
+    .item {
+      float: left;
+      padding-bottom: 20px;
+      padding-right: 15px;
+    }
+    .item:nth-of-type(3n) {padding-right: 0;}
+    .item:nth-last-of-type(-n+3) {padding-bottom: 0;}
+  }
+
+  .table {
+    width: 100%;
+    border-collapse: collapse;
+    
+    margin-bottom: 30px;
+    
+    .table__tr {
+    }
+
+    .table__td {
+      box-sizing: border-box;
+      
+      padding: 9px 0 8px 20px;
+      
+      line-height: 24px;
+      letter-spacing: .02em;
+
+      @include fz(14);
+      border: 1px solid #cccccc;
+    }
+    .table__td:nth-child(1) {
+
+      width: 135px;
+      
+      background-color: #f6f6f6;
+    }
+
+    .table__td_list {
+      @extend %cf;
+    }
+    .item {
+      float: left;
+    }
+    .item:nth-child(1) {
+      margin-right: 15px;
+    }
+    .item:nth-child(2) {
+      display: table;
+      height: 311px;
+      span {
+        display: table-cell;
+        vertical-align: middle;
+
+        line-height: 27px;
+        height: 100%;
+      }
+    }
+
+    .bgColor {
+      background-color: #fbfbfb !important;
+    }
+    .lhAdjust {
+      line-height: 27px;
+    }
+
+  }
+
+  .table__history {
+    .table__td {
+      line-height: 27px !important;
+    }  
+  }
+
+  .policy__img {margin-bottom: 30px;}
+  .policy__para {margin-bottom: 30px;}
+  .policy__para,.policy__sign {letter-spacing: 0;}
+  .policy__sign {text-align: right;}
+
+  .map {
+    width: 467px;
+    height: 311px;
+  }
+
+}
+

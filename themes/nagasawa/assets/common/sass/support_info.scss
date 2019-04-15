@@ -1,0 +1,224 @@
+@charset "utf-8";
+
+@import "init/import";
+
+/* -------------------------------------------------
+    01-layout,style
+      common
+      header
+      main
+      sidebar
+      footer
+    02-function
+      modal
+      slide
+    03-animationsss
+    04-responsives
+    05-others
+------------------------------------------------- */
+    
+.mainArea {
+  @extend %width;
+
+    .tabArea {
+      overflow: hidden;
+
+      padding: 0 20px;
+      padding-bottom: 5px;
+
+      background: url(../img/support/bg_keylex.gif) bottom repeat-x;
+      
+      .item {
+        float: left;
+        
+        margin-right: 11px;
+      }
+      .item:last-child {
+        margin: 0;
+      }
+      .item:hover {opacity: 0.5;}
+      .item.on:hover{opacity: 1;}
+    }
+    #tab__handle .tabArea {
+      background: url(../img/support/bg_handle.gif) bottom repeat-x;
+    }
+    #tab__kodai .tabArea {
+      background: url(../img/support/bg_kodai.gif) bottom repeat-x;
+    }
+
+    .tabPanel {
+      position: absolute;
+    }
+   
+    .contentsArea {
+      padding: 40px 20px;
+
+      width: 100%;
+
+      box-sizing: border-box;
+      border: 1px solid #eaeaea;
+      border-top: none;
+
+      background-color: #f6f6f6;
+    }
+      
+    .blockWrap {
+      padding: 15px;
+
+      background-color: #fff;
+      border-right: 1px solid #e1e1e1;
+      border-left: 1px solid #e1e1e1;
+      border-top: 1px solid #e1e1e1;
+    }
+    .blockWrap:last-child {border-bottom: 1px solid #e1e1e1;}
+
+    .block__list_tit {
+      text-align: left;
+      
+      line-height: 22px;
+      letter-spacing: .085em;
+
+      font-size: 14px;
+      font-weight: bold;
+      margin-bottom: 15px;
+      
+      img {
+        padding-right: 15px;
+      }
+    }
+    
+    .block {
+      @extend %cf;
+      margin-bottom: 40px;
+      
+      .block__list {
+        float: left;
+      
+        width: 50%; 
+        
+        .tit {
+          margin-bottom: 7px;
+          padding: 7px 10px 5px;
+          
+          @include fz(14);
+          letter-spacing: .085em;
+
+          background-color: #d2d9e2;
+        } 
+        .text {
+          padding: 0 10px;
+          letter-spacing: .085em;
+          
+          span.setting {
+            display: inline-block;
+            margin-top: 15px;
+          }
+        }
+        .text:first-of-type {margin-bottom: 10px;}
+        .listType__silver {
+          padding-left: 22px;
+
+          background: url(../img/support/info/color01.gif) no-repeat left 3px;
+        }
+        .listType__amber {
+          padding-left: 22px;
+
+          background: url(../img/support/info/color02.gif) no-repeat left 3px;
+        }
+      }
+      
+      .block__list_inner {
+        @extend %cf;
+        
+        margin-bottom: 20px;
+
+      }
+      .block__list_item {
+        margin-right: 15px;
+        
+        float: left;
+      }
+      .block__list_subList {
+        position: static;
+        
+        .subItem:last-child {
+          position: absolute;
+          bottom: 0px;
+        }
+      }
+
+      .block__list_inner_row {
+        .item {width: 48%;}
+        .item:first-child {float: left;}
+        .item:last-child {float: right;}
+        .text {line-height: 28px;}
+      }
+      .lhAdjust {  
+        padding-top: 7px;
+        
+        line-height: 24px;
+      }
+    }
+    .block:last-child {margin-bottom: 0;}
+
+    .modalBg {
+      position: fixed;
+      top: 0;
+      left: 0;
+      z-index: 5;
+
+      width: 100%;
+      height: 100%;
+      min-width: 950px;
+      min-height: 600px;
+
+      background-color: rgba(0,0,0,.6);
+    }
+    .modalWrap {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+
+      margin-left: -455px;
+      margin-top: -250px;
+      width: 910px;
+      height: 500px;
+
+      overflow-y: scroll;
+      
+      .close {
+        position: absolute;
+        top: 15px;
+        right: 15px;
+        z-index: 5;
+      }
+
+      .block {margin-bottom: 0;}
+
+      .subItem:last-child {
+        // position: static !important;
+      }
+
+
+      .listBlock {
+        overflow: hidden;
+        
+        .item {
+          float: left;
+          padding-bottom: 20px;
+          padding-right: 2%;
+          width: 32%;
+          
+          img {
+            width: 100%;
+            height: auto;
+          }
+        }
+        .item:nth-of-type(3n) {padding-right: 0;}
+        .item:nth-last-of-type(-n+3) {padding-bottom: 0;}
+      }
+
+    }
+
+}
+

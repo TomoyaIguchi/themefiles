@@ -1,0 +1,120 @@
+@charset "utf-8";
+
+@import "init/import";
+
+/* -------------------------------------------------
+    01-layout,style
+      common
+      header
+      main
+      sidebar
+      footer
+    02-function
+      modal
+      slide
+    03-animationsss
+    04-responsives
+    05-other
+------------------------------------------------- */
+    
+.mainArea {
+  @extend %width;
+ 
+  .listBlock {
+    overflow: hidden;
+
+    margin-bottom: 20px;
+    padding: 20px;
+
+    background-color: #f6f6f6;
+    
+    .item {
+      float: left;
+      padding-bottom: 10px;
+      padding-right: 15px;
+    }
+    .item:nth-of-type(3n) {padding-right: 0;}
+    .item:nth-last-of-type(-n+3) {padding-bottom: 0;}
+  }
+
+  .block {
+    padding: 20px;
+    border: 1px solid #ccc;
+    
+    .block__list {
+    }
+    .block__list:nth-of-type(1) {
+      .block__list_item {
+        padding-top: 0;
+      }
+    }
+    .block__list:nth-last-of-type(1) {
+      .block__list_inner {
+        background: none;
+      }
+      .block__list_item {
+        padding-bottom: 0;
+      }
+    }
+
+    .block__list_inner {
+      @extend %cf;
+
+      background: url(../img/common/dot.png) repeat-x bottom;
+    }
+
+    .block__list_item {
+      float: left;
+
+      padding: 12px 0;
+      
+      line-height: 24px;
+      letter-spacing: .1em;
+
+      @include fz(14);
+    }
+    .block__list_item:nth-child(1) {
+      float: left;
+
+      padding: 12px 0;
+      
+      line-height: 24px;
+      letter-spacing: .1em;
+
+      @include fz(14);
+    }
+    .block__list_item:nth-child(1) {
+      width: 20%;
+      
+      margin-right: 2%;
+
+      text-align: center;
+    }
+    .block__list_item:nth-child(2) {
+      width: 78%;
+    }
+
+    .bg {
+      display: inline-block;
+
+      width: 100%;
+      padding: 5px 0;
+
+      background-color: #d2dae3;
+      line-height: 1;
+    }
+
+  }
+
+  .block__shopList {margin-bottom: 50px;}
+
+  .para {
+    margin-bottom: 15px;
+    text-align: center;
+    
+    font-weight: bold;
+  }
+
+
+}
+

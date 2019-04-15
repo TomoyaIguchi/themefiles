@@ -1,0 +1,70 @@
+@charset "utf-8";
+
+@import "init/import";
+
+/* -------------------------------------------------
+    01-layout,style
+      common
+      header
+      main
+      sidebar
+      footer
+    02-function
+      modal
+      slide
+    03-animationsss
+    04-responsives
+    05-other
+------------------------------------------------- */
+    
+.mainArea {
+  @extend %width;
+
+    .mainArea__block {
+      @extend %cf;
+      
+      .item {
+        float: left;
+        width: 33.3%;
+        
+        padding-bottom: 20px;
+        
+        border-right: 1px solid #ccc;
+      }      
+      .item__inner {
+        padding: 0 20px;
+        
+      }
+      .item:nth-of-type(3n) {
+        width: 33%;
+        
+        border-right: none;
+      }         
+      
+    }
+
+    .item__thumbnail {
+      padding-top: 35px;
+      margin-bottom: 30px;
+
+      text-align: center;
+      
+      width: 100%;
+    }
+    .item__tit {
+      text-align: center;
+
+      margin-bottom: 30px;
+
+      line-height: 1;      
+    }
+    .item__text {      
+      letter-spacing: .005em;
+      
+      line-height: 26px;
+      text-align: justify;
+    }
+
+
+}
+

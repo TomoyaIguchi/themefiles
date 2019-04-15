@@ -1,0 +1,15 @@
+.ie9 .keywordBlock__list_tit,
+.ie10 .keywordBlock__list_tit {
+  line-height: 24px !important;
+}
+
+.ie9 .icon,
+.ie10 .icon {
+  display: inline-block !important;
+  
+  height: 24px !important;
+  
+  -webkit-background-size: 24px !important;
+       -o-background-size: 24px !important;
+          background-size: 24px !important;
+}

@@ -1,0 +1,59 @@
+@charset "utf-8";
+// ===================================================================
+// 設定
+// ===================================================================
+
+// 幅
+$maxWidth: 960px;
+$minWidth: 300px;
+$mainWidth01: 990px;
+$mainWidth02: 650px;
+$side_width: 280px;
+
+// カラー
+// リンク
+$linkColor: #1c426d;
+$linkColorHover: #1c426d;
+$linkColorVisited: #1c426d;
+$linkColorActive: #1c426d;
+
+$baseColor: #c69;
+$mainColor: #c69;
+$accColor: #c69;
+
+$subColor01: #7e9dd0;
+$subColor02: #7e9dd0;
+
+// 付与するベンダープレフィックス
+$set_prefix: -webkit-, -moz-, -ms-, -o-, '';
+
+// フォント
+$font: Meiryo, メイリオ,'Hiragino Kaku Gothic ProN', 'ヒラギノ角ゴ ProN W3', sans-serif;
+// $base_font: "Source Code Pro", "メイリオ", "Meiryo", "ヒラギノ明朝 Pro W6", "Hiragino Mincho Pro", "HGS明朝E", "ＭＳ Ｐ明朝", serif, verdana, "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", Osaka, "ＭＳ Ｐゴシック", "MS PGothic", Sans-Serif;
+$font02: 'Hiragino Kaku Gothic ProN', 'ヒラギノ角ゴ ProN W3', sans-serif;
+// $base_font: "Source Code Pro", "メイリオ", "Meiryo", "ヒラギノ明朝 Pro W6", "Hiragino Mincho Pro", "HGS明朝E", "ＭＳ Ｐ明朝", serif, verdana, "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", Osaka, "ＭＳ Ｐゴシック", "MS PGothic", Sans-Serif;
+
+
+$fontSize: 16;
+$textColor: #000;
+$titleColor: red;
+$bgColor: #fff;
+
+// アニメーション
+$easeInCubic: cubic-bezier(0.55, 0.055, 0.675, 0.19);
+$easeOutCubic: cubic-bezier(0.215, 0.61, 0.355, 1);
+$easeOutQuad: cubic-bezier(0.25, 0.46, 0.45, 0.94);
+$easeInOutCubic: cubic-bezier(0.645, 0.045, 0.355, 1);
+$easeOutBack: cubic-bezier(0.175, 0.885, 0.32, 1.275);
+$easeInOutQuint: cubic-bezier(0.86, 0, 0.07, 1);
+$easeInOutSine: cubic-bezier(0.445, 0.05, 0.55, 0.95);
+
+$dur: 500s;
+
+// その他
+$lh: 1.5;
+
+// calc
+// height:98%;
+// height:-webkit-calc(100% - 20px);
+// height:calc(100% - 20px);

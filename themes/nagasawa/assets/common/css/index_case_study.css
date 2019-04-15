@@ -1,0 +1,5 @@
+.mainArea .imgBlock,.mainArea .imgBlockChild{width:950px;height:412px}.mainArea .item{margin-bottom:1px;background-color:#f4f4f8}.mainArea .imgBlock{margin:0 auto}.mainArea .imgBlock:hover{opacity:.8}.mainArea .imgBlock01{background:url(../img/case_study/bg01.jpg) no-repeat}.mainArea .imgBlock02{background:url(../img/case_study/bg02.jpg) no-repeat}.mainArea .imgBlock03{background:url(../img/case_study/bg03.jpg) no-repeat}.mainArea .imgBlock__textWrap{position:absolute;top:137px;left:454px;width: 45%;padding: 2%;}.mainArea .imgBlock__text{margin-bottom:20px;font-size: 14px;
+    font-size: 1.25rem;
+    line-height: 24px;
+    letter-spacing: .1em;
+    text-align: justify;}.mainArea .imgBlock__textBottom{font-size:14px;font-size: 1.2rem;display:inline-block;padding-left:15px;background:url(../img/common/icon-arrow.png) 0 2px no-repeat;}.mainArea .imgBlock02 .imgBlock__textWrap{left: 45px;}

@@ -1,0 +1,290 @@
+/* CSS Document */
+/*コンテナとリンク*/
+
+body {
+	margin:0;
+	padding:0;
+	font-family:"ＭＳ Ｐゴシック", Osaka, "ヒラギノ角ゴ Pro W3";
+	word-break:break-all;
+	background-color: #FFFFFF;
+}
+
+h1{
+	font-size:14px;
+	line-height:normal;
+	color: #006600;
+	top: 30px;
+	padding-top: 20px;
+	bottom: 5px;
+	margin: 0px;
+	padding-bottom: 5px;
+	font-weight: bold;
+}
+
+.redtx{
+	color:#FF0000;
+	}
+.tx12{
+	font-size:12px;
+	}
+
+/*コンテナ*/
+#navi{
+	float:left;
+	width:175px;
+	background-image:url(../../../img/common/navi_bg.gif);
+	background-repeat: no-repeat;
+}
+	.bn{
+	margin: 0px;
+	padding-top: 2px;
+	padding-bottom: 2px;
+	}
+	.textnavi{
+	border-top-width: 2px;
+	border-bottom-width: 2px;
+	border-top-style: solid;
+	border-bottom-style: solid;
+	border-top-color: #6396C6;
+	border-bottom-color: #6396C6;
+	font-size:10px;
+	color:#666666;
+	text-decoration:none;
+	text-indent: 1.5em;
+	background-image:url(../img/common/sankaku_b.gif);
+	background-repeat: no-repeat;
+	background-position: 6px;
+	margin: 0px;
+	padding-top: 4px;
+	padding-bottom: 4px;
+
+	}
+#main{
+	float:left;
+	width:560px;
+	background-color:#FFFFFF;
+	margin: 0px;
+	padding: 0px;
+}
+#main2{
+	float:left;
+	width:760px;
+	background-color:#FFFFFF;
+	margin: 0px;
+	padding: 0px;	
+	padding-bottom: 10px;
+}
+
+#pagebody{
+	width:760px;
+	margin:0px 10px auto 10px;
+	padding:0;
+	background-color:#FFFFFF;
+}
+#header{
+	float:left;
+	width:760px;
+	background-color: #FFFFFF;
+	border-bottom-width: 1px;
+	border-bottom-style: solid;
+	border-bottom-color: #639ACE;
+	margin-top: 0px;
+	margin-right: 10px;
+	margin-bottom: 10px;
+	margin-left: 0px;
+	padding-bottom:5px;
+}
+#footer{
+	float:left;
+	border-top:5px #639ACE solid;
+	width:760px;
+	height:30px;
+	margin: 2px 0px 0px 2px;
+	font-size: 11px;
+}
+.space{
+	clear:left;
+	width: auto;
+}
+#topmenu{
+	font-size:12px;
+	color:#666666;
+	text-decoration:none;
+	text-indent: 1em;
+	background-image:url(../img/common/sankaku_b.gif);
+	background-repeat: no-repeat;
+	background-position: left;
+}
+.border{
+	border-top:#CECFCE 2px dotted;
+	display: block;
+	width: auto;
+	height: 5px;
+	padding: 0px;
+}
+
+/*リンク色*/
+#topmenu a:link{
+	font-size:12px;
+	color:#666666;
+	text-decoration:none;
+	text-indent: 0.75em;
+}
+#topmenu a:visited{font-size:12px ;  color:#6699CC; text-decoration:none;}
+#topmenu a:hover{font-size:12px ;  color:#6699CC  ; text-decoration:underline;}
+
+.privacy {font-size: 10px; color:#6699CC; text-align:right;}
+#footer a:link{ color:#666666 ; text-decoration:none;}
+#footer a:visited{ color:#6699CC; text-decoration:none;}
+#footer a:hover{ color:#6699CC  ; text-decoration:underline;}
+
+
+a:link{ color:#6699CC ; text-decoration:none;}
+a:visited{ color:#6699CC; text-decoration:none;}
+a:hover{ color:#6699CC; text-decoration:underline;}
+.white {
+	font-size: xx-small;
+	color: #FFFFFF;
+}
+/*What's new*/
+#WhatsNew{
+	width:460px;
+	height:auto;
+	margin:0px;
+}
+#WhatsNewTtl{
+	width:460px;
+	margin:0px 10px 0px 10px;
+	height:30px;
+	background-image:url(../../../img/index/whatsnew.gif);
+	background-repeat:no-repeat;
+	text-indent:-9999px;
+
+}
+
+#WhatsNew p{
+	background-image:url(../../../img/news/news_mark.gif);
+	background-repeat:no-repeat;
+	font-size:12px;
+	color:#999999;
+	text-indent:1.5em;
+	margin:5px 10px 5px 10px;
+	background-position:2px 2px;
+	display: block;
+	float: none;
+	width: 470px;
+}
+#WhatsNew a:link{color:#1F5FAD; font-weight:bold;}
+#WhatsNew a:hover{color:#6699CC; font-weight:bold;}
+#WhatsNew a:visited{color:#1F5FAD; font-weight:bold;}
+
+/*サイトマップ*/
+#sitemap1{
+	float:left;
+	width:510px;
+	background-color: #FFFFFF;
+	background-image:url(../img/common/sankaku_b.gif);
+	background-repeat:no-repeat;
+	text-indent: 1em;
+	font-size:12px;
+	font-weight: bold;
+	margin: 20px 0px 10px 10px;
+}
+#sitemap2{
+	float:left;
+	width:470px;
+	background-color: #FFFFFF;
+	background-image:url(../img/common/sankaku_b.gif);
+	background-repeat:no-repeat;
+	border-left-width: 3px;
+	border-left-style: dotted;
+	border-left-color: #9C9A9C;
+	text-indent: 1.5em;
+	font-size:12px;
+	margin-left: 20px;
+	padding-right: 5px;
+	padding-bottom: 5px;
+	background-position: 5px 0px;
+}
+
+#sitemap2_Top{
+	float:left;
+	width:470px;
+	background-color: #FFFFFF;
+	background-image:url(../img/common/sankaku_b.gif);
+	background-repeat:no-repeat;
+	border-left-width: 3px;
+	border-left-style: dotted;
+	border-left-color: #9C9A9C;
+	text-indent: 1.5em;
+	font-size:12px;
+	margin-left: 20px;
+	padding-right: 5px;
+	padding-bottom: 5px;
+	padding-top: 10px;
+	background-position: 5px 10px;
+}
+#sitemap2_Com{
+	float:left;
+	width:470px;
+	background-color: #FFFFFF;
+	background-image:url(../img/common/sankaku_b.gif);
+	background-repeat:no-repeat;
+	border-left-width: 3px;
+	border-left-style: dotted;
+	border-left-color: #9C9A9C;
+	font-size:12px;
+	text-indent: 1.5em;
+	margin-left: 20px;
+	padding-right: 5px;
+	padding-bottom: 5px;
+	padding-top: 10px;
+	background-position: 5px 12px;
+	border-top-width: 1px;
+	border-top-style: dashed;
+	border-top-color: #9C9A9C;
+}
+.under{
+	margin-left:30px;
+	font-weight: normal;
+	line-height: 200%;
+}
+
+.underTop {
+	margin-left:50px;
+	font-weight: normal;
+	line-height: 200%;
+	margin-top: 20px;
+}
+#sitemap2_Com2 {
+	float:left;
+	width:470px;
+	background-color: #FFFFFF;
+	background-image:url(../img/common/sankaku_b.gif);
+	background-repeat:no-repeat;
+	border-left-width: 3px;
+	border-left-style: dotted;
+	border-left-color: #9C9A9C;
+	text-indent: 1.5em;
+	font-size:12px;
+	margin-left: 20px;
+	padding-right: 5px;
+	padding-bottom: 5px;
+	padding-top: 5px;
+	background-position: 5px 7px;
+}
+/*--パンくず--*/
+#rootlist{
+	width:530px;
+	text-align:left;
+	font-size:10px;
+	margin:2px 0px 2px 0px;
+	clear:both;
+	color:#6699CC;
+}
+
+img{border:none;}
+
+.c_ff0000{color:#FF0000;}
+table#mainmenu .c_0000cc{color:#0000cc;}
+table#mainmenu td{font-size:12px;}

@@ -1,0 +1,103 @@
+// ===================================================================
+// common
+// ===================================================================
+// @extend = 継承
+
+%cen {
+	position: absolute;
+    top: 50%;
+    left: 50%;
+}
+	// call
+	// @extend %cen;
+	
+%cf {
+    zoom:1;
+    &:after{
+        display: block;
+        content: "";
+        clear: both;
+    }
+}
+
+// %hover {
+// 	&:hover{ 
+// 	    background: rgba(#000,0.8);
+// 	}
+// }
+%hover {
+	&:hover{ 
+	    @include transform(scale(1.2));
+	}
+}
+
+%justify {
+  text-align: justify;
+  text-justify: inter-ideograph;
+}
+
+// ===================================================================
+// font
+// ===================================================================
+
+%heading {
+  @include fz(14);
+  font-family: RodinPro B,HelveticaNeueLTStd Bd;
+  color: #fff;
+}
+%heading_ad {
+  line-height: 22px;
+  letter-spacing: .1em;
+}
+
+%footerText {
+  @include fz(12);
+  color: #fff;  
+}
+       
+%subMenuText {
+  @include fz(12);
+  color: #1c426d;
+}
+
+%copy {
+  @include fz(10);
+  color: #999;
+}
+
+%para_link {
+  @include fz(14);
+  color: #1c426d;
+}
+
+%para {
+  @include fz(14);
+  color: #000;
+}
+
+%para_ad {
+  line-height: 24px;
+  letter-spacing: .1em;
+}
+
+// ===================================================================
+// extends
+// ===================================================================
+
+%width {
+  width: 950px;
+  margin: 0 auto;
+}
+
+%text {
+  line-height: 24px;
+  letter-spacing: .1em;
+
+  @include fz(14);
+}
+
+%tit {
+  @include fz(14);
+  font-weight: bold;
+  letter-spacing: 0em;
+}

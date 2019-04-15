@@ -1,0 +1,121 @@
+@charset "utf-8";
+
+@import "init/import";
+
+/* -------------------------------------------------
+    01-layout,style
+      common
+      header
+      main
+      sidebar
+      footer
+    02-function
+      modal
+      slide
+    03-animationsss
+    04-responsives
+    05-other
+------------------------------------------------- */
+    
+.mainArea {
+  @extend %width;
+
+    .mainArea__block {
+      @extend %cf;
+      
+      .item {
+        float: left;
+        width: 33.3%;
+        
+        padding-bottom: 40px;
+        
+        .item__thumbnail {
+          padding-top: 25px;
+        }
+      }
+      .item:nth-child(2) {
+        .item__text {padding-bottom: 54px;}
+      }   
+      .item:nth-child(3) {
+        .item__thumbnail {padding-top: 0;}
+        .item__text {padding-bottom: 31px;}
+      }   
+      .item__inner {
+        padding: 0 15px;
+        
+        border-right: 1px solid #ccc;
+      }
+      .item:nth-of-type(3n) {
+        width: 33.4%;
+        .item__inner {
+          border-right: none;
+        }
+      }      
+      .item:nth-last-of-type(-n+3) {
+        padding-bottom: 0;
+      }
+    }
+
+    .mainArea__subBlock_wrap {
+      width: 950px;
+    }
+
+    .mainArea__block.mainArea__subBlock {
+      @extend %cf;
+      
+      margin: 0 auto;
+      
+      width: 33.3%;
+      
+      .item {
+        float: none;
+        
+        padding-top: 25px;
+        width: 100%;
+        
+        padding-bottom: 40px;
+      }      
+      .item:last-child {
+        padding-bottom: 0;
+      }     
+      .item__inner {
+        padding: 0 15px;
+        
+        border: none;
+      }
+    }
+
+
+    .item__thumbnail {
+      display: table;
+
+      text-align: center;
+
+      height: 189px;
+      width: 100%;
+    }
+    .item__tit {
+      display: table;
+
+      text-align: center;
+
+      height: 66px;
+      width: 100%;
+    }
+    .item__span {
+      display: table-cell;
+      vertical-align: middle;     
+    }
+    .item__text {
+      padding-bottom: 30px;
+      
+      letter-spacing: .075em;
+    }
+    .item__btn {
+        img {
+          width: 100%;
+        }
+    }
+
+}
+

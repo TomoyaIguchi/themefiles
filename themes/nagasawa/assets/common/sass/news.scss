@@ -1,0 +1,129 @@
+@charset "utf-8";
+
+@import "init/import";
+
+/* -------------------------------------------------
+    01-layout,style
+      common
+      header
+      main
+      sidebar
+      footer
+    02-function
+      modal
+      slide
+    03-animationsss
+    04-responsives
+    05-other
+------------------------------------------------- */
+    
+.mainArea {
+  @extend %width;
+ 
+  .listBlock {
+    overflow: hidden;
+
+    margin-bottom: 20px;
+    padding: 15px 20px;
+
+    background-color: #f6f6f6;
+    border: 1px solid #cccccc;
+
+    .item {
+      float: left;
+      
+      padding: 0 15px;
+
+      border-right: 1px solid #ccc;
+    }
+    .item:nth-of-type(1) {padding-left: 0;}
+
+    .arrow {
+      position: relative;
+      top: 1px;
+
+      padding-left: 15px;
+
+      background: url(../img/common/icon-arrow.png) 0 7px no-repeat;
+    }
+    .on {
+      background: url(../img/common/arrow_on.png) 0 9px no-repeat;
+    }
+  }
+
+  .selectBoxArea {
+    margin-left: auto;
+    margin-right: 0;
+    
+    width: 275px;
+  }
+  .selectBoxArea__listWrap {width: 275px;}
+
+  .block {
+    margin-bottom: 40px;
+    
+    .block__list_inner {
+      @extend %cf;
+
+      padding: 13px 0;
+      padding-bottom: 11px;
+      
+      background: url(../img/common/dot.png) bottom repeat-x;
+    }
+
+    .block__list_item {
+      float: left;
+
+      padding-right: 10px;
+      
+      line-height: 21px;
+      letter-spacing: .1em;
+
+      @include fz(14);
+      
+    }
+    .block__list_item:last-child {
+      padding: 0;
+      
+      width: calc(100% - 200px);
+    }
+
+  }
+
+  .article__pager {
+    text-align: center;
+    
+    .article__pager_block {
+      font-size: 0;
+    }
+    .item {
+      display: inline;
+      margin-right: 10px;
+    }
+    .item:nth-last-of-type {
+      margin: 0;    
+    }
+    .num {
+      display: inline-block;
+      
+      width: 35px;
+      height: 35px;
+      line-height: 35px;
+
+      text-align: center;
+
+      background: url(../img/common/bgHeader.gif);
+
+      @include fz(18);
+      color: #fff;
+      font-weight: bold;
+    }
+    .on {
+      opacity: 1;
+      .num {background: #ccc;}
+    }
+  }
+
+
+}
+

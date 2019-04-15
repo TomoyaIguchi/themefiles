@@ -1,0 +1,13 @@
+.ie .keywordBlock__list_tit {
+  line-height: 22px !important;
+}
+
+.ie .icon {
+  display: inline-block !important;
+  
+  height: 22px !important;
+  
+  -webkit-background-size: 22px !important;
+       -o-background-size: 22px !important;
+          background-size: 22px !important;
+}

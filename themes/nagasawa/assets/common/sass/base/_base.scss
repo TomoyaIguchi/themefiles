@@ -1,0 +1,71 @@
+/*------------------------------------------------------------
+    html,body    
+------------------------------------------------------------*/
+
+    html {
+      min-width: 950px;
+    }
+
+/*------------------------------------------------------------
+    a    
+------------------------------------------------------------*/
+
+    
+    a:link {
+      color: $linkColor;
+      text-decoration: none;
+    }
+    a:hover {
+      color: $linkColorHover;
+      text-decoration: none;
+    }
+    a:visited {
+      color: $linkColorVisited;
+      text-decoration: none;
+    }
+    a:active {
+      color: $linkColorActive;
+      text-decoration: none;
+    }
+
+/*------------------------------------------------------------
+    hover    
+------------------------------------------------------------*/
+
+    .link:hover {border-bottom: 1px solid #1c426d;}
+
+    .under {border-bottom: 1px solid #1c426d;}
+    .under:hover {border-bottom: none;}
+
+    .linkArea:hover .link {border-bottom: 1px solid #1c426d;}
+    .linkArea:hover img {opacity: 0.5;}
+
+    .op {
+      @include transition(all .25s $easeOutQuad 0s);
+      
+      &:hover {
+        cursor: pointer;
+        opacity: 0.5;
+      }
+    }
+    #productList .op:hover {opacity: 0.7;}
+    .cp {cursor: pointer;}
+    
+/*------------------------------------------------------------
+    img    
+------------------------------------------------------------*/
+
+    img {
+    }
+
+/*------------------------------------------------------------
+    p
+------------------------------------------------------------*/
+
+    p {
+      line-height: 24px;
+      letter-spacing: .1em;
+
+      @include fz(14);
+    }
+
